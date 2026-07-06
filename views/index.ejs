@@ -1,16 +1,55 @@
-<!DOCTYPE html>
+<!-- Nest: add text to delorean upgrades -->
+
+ <!DOCTYPE html>
 <html lang="en">
 <%- include('partials/head.ejs') %>
 
   <body>
+    <div class="body-box">
     <%- include('partials/header.ejs') %>
     <%- include('partials/navigation.ejs') %>
     <main>
       <h1>Welcome to CSE Motors!</h1>
-      <img class="hero" src="/images/vehicles/delorean.jpg">
+      <img class="hero" src="/images/vehicles/delorean.jpg" alt="DMC Delorean Hero">
+      <section>
+        <h2>DMC Delorean</h2>
+        <ul>
+          <li>3 Cup holder</li>
+          <li>Superman doors</li>
+          <li>Fuzzy dice!</li>
+        </ul>
+        <a href="#">
+          <img src="/images/site/own_today.png" alt="Own today button">
+        </a>
+      </section>
+      <div class="sections-div">
+        <section class="upgrades">
+          <h2>Delorean Upgrades</h2>
+          <a href="#">
+            <img src="/images/upgrades/flux-cap.png" alt="">
+            <p></p>
+          </a>
+          <a href="#">
+            <img src="/images/upgrades/flame.jpg" alt="">
+            <p></p>
+          </a>
+          <a href="#">
+            <img src="/images/upgrades/bumper_sticker.jpg" alt="">
+            <p></p>
+          </a>
+          <a href="#">
+            <img src="/images/upgrades/hub-cap.jpg" alt="">
+            <p></p>
+          </a>
+        </section>
+        <section class="reviews">
+          <h2>DMC Delorean Reviews</h2>
+        </section>
+      </div>
     </main>
 
     <%- include('partials/footer.ejs') %>
+    </div>
   </body>
 
 </html>
