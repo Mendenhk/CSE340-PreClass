@@ -4,3 +4,26 @@
 *:after {
   box-sizing: border-box;
 }
+
+/*---------Small/General Screens---------*/
+header {
+
+  & a {
+    text-decoration: none;
+  }
+
+  & .siteName {
+    font-size: 2rem;
+  }
+
+}     
+
+
+
+/*---------END Small/General Screens---------*/
+
+
+/*---------Large Screens---------*/
+@media screen and (min-width: 500px) {
+
+}
