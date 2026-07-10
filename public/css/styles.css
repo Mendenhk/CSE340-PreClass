@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --baby-blue: #007bff;
+  /* Bright Blue */
+  --secondary-color: #6c757d;
+  /* Muted Gray */
+  --off-white: #f8f9fa;
+  --rgb-off-white: 248, 249, 250;
+  /* Light Background.  RGB  used so can be transparent*/
+  --text-color: #212529;
+  /* Dark Text */
+}
+
 /*---------Small/General Screens---------*/
 body {
   padding: 0 2rem;
@@ -21,20 +33,35 @@ header {
   & .siteName {
     font-size: 2rem;
   }
-
 }     
 
-.hero {
-  position: relative;
-}
+nav {
+  & ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: var(--off-white);
+    background-color: black;
+    padding: 1rem 0;
+  }
 
-.floating-text {
-  position: absolute;
-  top: 230px;
-  left: 3rem;
+  & li:hover {
+    cursor: pointer;
+  }
 }
 
 main {
+  & .hero {
+      position: relative;
+    }
+  
+  & .floating-text {
+    position: absolute;
+    top: 230px;
+    left: 3rem;
+    color: var(--baby-blue);
+    background: rgba(var(--rgb-off-white), 0.5);
+  }
   
   & .upgrades {
     display: grid;
